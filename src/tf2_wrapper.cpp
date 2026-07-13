@@ -31,7 +31,13 @@
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <tf2_sensor_msgs/tf2_sensor_msgs.hpp>
-#include <tf2/exceptions.h>
+#if __has_include(<tf2/exceptions.hpp>)
+  #include <tf2/exceptions.hpp>
+#elif __has_include(<tf2/tf2/exceptions.hpp>)
+  #include <tf2/tf2/exceptions.hpp>
+#else
+  #error "Could not find TF2 exception .hpp headers"
+#endif
 
 
 static Tf2Status ok() {

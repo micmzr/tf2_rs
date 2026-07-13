@@ -7,7 +7,7 @@ transforms.
 
 ## Status
 
-- Developed and validated against ROS 2 Jazzy (tested against hubmle and kilted).
+- Developed and validated primarily against ROS 2 Jazzy. Supports Humble, Jazzy, Kilted and Lyrical. (A know issue in rclrs blocks compilation for Lyrical currently but should be fixed soon)
 - Recommended build path: `ament_cargo` inside a sourced ROS 2 workspace.
 - Currently implemented `Transformable` support: `sensor_msgs::msg::PointCloud2`.
 - This crate is not a full `tf2_ros` replacement yet; it covers the core pieces
