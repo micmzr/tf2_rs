@@ -166,6 +166,26 @@ fn main() -> Result<(), RclrsError> {
 If you want lower-level control, call `lookup_transform(...)` yourself and then
 use `msg.apply_transform(&tf)` on any type that implements `Transformable`.
 
+## Citation
+
+The paper describing this work, [*tf2_rs: Bringing tf2 to
+Rust*](https://ceur-ws.org/Vol-4243/paper4.pdf), was published in the
+[Proceedings of the 8th International Workshop on Robotics Software Engineering
+(RoSE 2026)](https://ceur-ws.org/Vol-4243/). If you use `tf2_rs` in academic
+work, please cite:
+
+```bibtex
+@inproceedings{engels2026tf2rs,
+  author    = {Theo Engels and Antonio Paolillo and Ken Hasselmann},
+  title     = {{tf2\_rs}: Bringing tf2 to Rust},
+  booktitle = {Proceedings of the 8th International Workshop on Robotics Software Engineering (RoSE 2026)},
+  series    = {CEUR Workshop Proceedings},
+  volume    = {4243},
+  publisher = {CEUR-WS.org},
+  year      = {2026},
+  url       = {https://ceur-ws.org/Vol-4243/paper4.pdf}
+}
+```
 
 ## Contributing
 
