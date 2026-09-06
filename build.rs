@@ -95,6 +95,7 @@ fn main() {
 
     // Core TF2
     println!("cargo:rustc-link-lib=tf2");
+    println!("cargo:rustc-link-lib=orocos-kdl");
 
     println!("cargo:rerun-if-changed=src/ffi.rs");
     println!("cargo:rerun-if-changed=src/tf2_wrapper.cpp");

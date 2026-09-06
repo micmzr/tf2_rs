@@ -7,6 +7,7 @@
 
   <depend>rclrs</depend>
   <depend>rosidl_runtime_rs</depend>
+  <depend>orocos-kdl</depend>
 
 
   <export>
