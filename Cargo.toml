@@ -16,10 +16,7 @@ crate-type = ["rlib"]
 cxx = "1"
 thiserror = "1"
 rclrs = "0.7"
-geometry_msgs = "*"
-tf2_msgs = "*"
-sensor_msgs = "*"
-std_msgs = "*"
+ros-env = "0.2"
 
 [build-dependencies]
 cxx-build = "1"
